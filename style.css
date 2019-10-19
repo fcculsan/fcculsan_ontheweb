@@ -8,6 +8,10 @@ html {
     text-indent: 2em;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: burlywood;
+}
+
 .logo {
     display: block;
     margin-left: auto;
