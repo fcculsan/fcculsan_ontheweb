@@ -45,3 +45,7 @@ a:link, a:visited, a:hover, a:active {
 .revname {
     text-align: center;
 }
+.bl { 
+font-size: 20px;
+ color: #00ffff;
+}
