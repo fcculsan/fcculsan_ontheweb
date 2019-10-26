@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'odinRounded';
+    src:
+        local('odinRounded'), url('fonts/Odinrounded/OdinRouonded.otf'),
+        format('opentype');
+}
+
 html {
     background: black;
     color: aliceblue;
@@ -8,7 +15,10 @@ html {
     text-indent: 2em;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     color: burlywood;
 }
 
@@ -24,7 +34,6 @@ a:link, a:visited, a:hover, a:active {
 .reviewbox {
     display: flex;
     border: 5px solid green
-
 }
 
 .reviewleft {
@@ -45,7 +54,12 @@ a:link, a:visited, a:hover, a:active {
 .revname {
     text-align: center;
 }
-.bl { 
-font-size: 20px;
- color: #00ffff;
+
+.bl {
+    font-size: 20px;
+    color: #00ffff;
+}
+
+#bensreview {
+    font-family: 'odinRounded', cursive;
 }
