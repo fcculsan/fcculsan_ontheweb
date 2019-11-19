@@ -1,6 +1,6 @@
 # fcculsan_ontheweb
 
-This is a website for our FCC ulsan to to practice their burgeoning coding skills. 
+This is a website for our FCC ulsan to to practice their burgeoning coding skills.
 
 https://fcculsan.github.io/fcculsan_ontheweb/
 
@@ -46,3 +46,23 @@ https://gist.github.com/MarcDiethelm/7303312
 7. Click the green "Create Pull Request" button.
 8. Describe your changes, and submit it.
 9. You're done!
+
+# Updating your forked repository
+
+Sometimes others will make changes to the `upstream` repository. They won't show up in your forked repository. You need to manually sync these changes. You can delete your forked repository directly on the GitHub website, then fork the `upstream` repository again. This will give you a fresh copy of the `upstream` repository that's up to date. Of course, you will lose any commits in your forked repository that weren't pulled into the `upstream`.
+
+The best way I know how to do this is via the command line.
+
+1. Ensure all the previous command line steps have been done correctly.
+   - [ ] Your local repository has 2 remote branches: `origin` and `upstream`.
+     - [ ] `origin` has a `url` including your username
+     - [ ] `upstream` has the `url` `https://github.com/fcculsan/fcculsan_ontheweb.git`
+2. Fetch the `upstream` changes
+   - `git fetch upstream`
+3. Make sure you're on the `master` branch
+   - `git checkout master`
+4. Combine the `upstream` changes with the code you have locally on `master`
+   - `git rebase upstream/master`
+5. Push your updated local repository to your forked version.
+   - `git push origin master`
+6. DONE! You can continue writing code, committing, pushing, and doing pull requests as usual.
