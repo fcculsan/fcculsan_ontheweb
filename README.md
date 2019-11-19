@@ -32,16 +32,17 @@ https://gist.github.com/MarcDiethelm/7303312
 3. Configure the `origin` and `upstream` correctly.
 
    - `origin`'s URL should point to your fork, so the URL should have your GitHub account in it.
-   - `upstream`'s URL should point to the original repository, so the URL should be `https://github.com/fcculsan/main.git`.
+   - `upstream`'s URL should point to the original repository, so the URL should be `https://github.com/fcculsan/fcculsan_ontheweb.git`.
    - use `git remote` to see if `origin` and `upstream` exist.
 
-     - use `git remote get-url origin` or `git remote get-url upstream` to see what the URLs are.
+     - use `git remote get-url origin` and `git remote get-url upstream` to see what the URLs are.
 
-   - If `origin` or `remote` have the wrong URLs, you can delete them with `git remote remove (origin/upstream)` and create them with the correct URL using `git remote add (origin/upstream) (URL)`.
+   - If `origin` or `upstream` have the wrong URLs, you can rename them with `git remote rename (oldname) (newname)` or delete them with `git remote remove (origin/upstream)` and create them with the correct URL using `git remote add (origin/upstream) (URL)`.
+
 4. Push your local commit to your remote fork.
-    - `git push origin master`
+   - `git push origin master`
 5. Go to your forked repository on the GitHub website.
-6. Click the "Pull Request" button to the right of where you see "This branch is 1 commit ahead of fcculsan:master." 
+6. Click the "Pull Request" button to the right of where you see "This branch is 1 commit ahead of fcculsan:master."
 7. Click the green "Create Pull Request" button.
 8. Describe your changes, and submit it.
 9. You're done!
